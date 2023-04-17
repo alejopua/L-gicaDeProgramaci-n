@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+<h1>Calculo IMC</h1>
+
+<script>
+    // Este codigo imprime las edades de tres chicas.
+
+    function lineFeed() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    //Si olvido declarar la funcion con la palabra function, simplemente no se va a ejecutar.
+
+    function print(statement) {
+        document.write(statement);
+        lineFeed();
+    }
+
+    function imc(weight, height, name) {
+        imc = weight / (height ** 2 );
+        var resul = "El IMC de " + name + " es " + imc + "<br>";
+
+        if (imc < 18.5 ) {
+            return print(resul + "Tienes bajo peso");  
+        } else if ((imc >= 18.5) && (imc <= 24.9 )) {
+            return print(resul + "Estas normal"); 
+        } else if ((imc >= 25.0) && (imc <= 29.9 )) {
+            return print(resul + "Tienes sobrepeso")
+        } else if ((imc >= 30.0) && (imc <= 34.5 )) {
+            return print(resul + "Tienes obesidad")
+        } else if ((imc >= 35.0) && (imc <= 39.9 )) {
+            return print(resul + "Tienes obesidad grado 2")
+        } else if (imc >= 40.0) {
+            return print(resul + "Tienes obesidad grado 3")
+        }
+
+    }
+
+    imc(prompt("Digita peso"), prompt("Digita altura"), prompt("Digita tu nombre"));
+
+</script>

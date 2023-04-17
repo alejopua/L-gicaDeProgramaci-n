@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<script>
+    // Este codigo imprime las edades de tres chicas.
+
+    function lineFeed() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<hr>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    //Si olvido declarar la funcion con la palabra function, simplemente no se va a ejecutar.
+
+    function print(statement) {
+        document.write("<big>" + statement + "</big>");
+        lineFeed();
+    }
+
+    var nombre1 = 'Catalina';
+    var nombre2 = 'Camila';
+    var nombre3 = 'Carolina';
+
+    var edadCatalina = 26;
+    var edadCamila = 28;
+    var edadCarolina = 22;
+
+    print(nombre1 + " tiene: " + edadCatalina + " años");
+
+    print(nombre2 + " tiene: " + edadCamila + " años");
+
+    print(nombre3 + " tiene: " + edadCarolina + " años");
+
+    var promedio = (edadCatalina + edadCamila + edadCarolina)/3;
+
+    print("El promedio de las edades es : " + Math.round(promedio));
+
+    print("La diferencia de edad entre " + nombre1 + " y " + nombre2 + " es de " + Math.abs(edadCatalina - edadCamila) + " años.");
+
+</script>

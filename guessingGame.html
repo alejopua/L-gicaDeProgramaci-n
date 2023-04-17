@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+<h1>Adivina el número pensado</h1>
+
+<script>
+
+    function lineFeed() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+
+    function print(statement) {
+        document.write(statement);
+        lineFeed();
+    }
+
+    
+    var intentos = 3;
+    var cont = 1;
+    var num = 0;
+    var random
+    
+    while (cont <= intentos) {
+        num =Number(prompt("Adivina, adivina, elige un numero del 1 al 10. SI aciertas ganas :)"));
+
+        random = Math.floor(Math.random() * 10) + 1;
+        
+        if (num == random ) {
+            alert("El numero elegido por ti fue " + num + " Ganasteeee...");
+            print("El numero elegido por ti fue " + num + " Ganasteeee...");
+            break;  
+        } else {
+            alert("Perdiste, sigue intentando. El numero ganador era el " + random + "." );
+            print("Perdiste, sigue intentando. El numero ganador era el " + random + "." );
+        }
+        cont++;
+    }
+
+
+</script>

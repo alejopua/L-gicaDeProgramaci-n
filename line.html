@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<h1>Adivina el número pensado</h1>
+
+<script>
+
+    function lineFeed() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+
+    function print(statement) {
+        document.write(statement);
+        lineFeed();
+    }
+
+    var fila = Number(prompt("Digita el número de asteriscos a visualizar horizontalmente."));
+    var colum = Number(prompt("Digita el número de columnas desea."));
+
+    for (let index = 1; index <=colum; index++) {
+        
+        for (let i = 1; i <=fila; i++) {
+            document.write("*");  
+        }
+        document.write("<hr>");
+    }
+
+
+</script>

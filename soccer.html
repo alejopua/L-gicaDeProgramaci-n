@@ -1,0 +1,33 @@
+<meta charset="UFT-8">
+
+<h1>Soccer calculator</h1>
+
+<script>
+    // Este código suma y calcula las puntuaciones obtenidas
+
+    function lineFeed() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<hr>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function print(statement) {
+        document.write(statement);
+        lineFeed();
+    }
+
+    var victories = Number(prompt("Numero de victorias"));
+    var draws = Number(prompt("Numero de empates"));
+
+    totalPoints = victories * 3 + draws;
+
+    print("El total de puntos del equipo es: " + totalPoints);
+
+
+
+
+    
+</script>

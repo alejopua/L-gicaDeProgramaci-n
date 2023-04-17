@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+<h1>Fifa world year</h1>
+
+<script>
+    // Este codigo pide al usuario un numero y si coincide con el elegido por el PC, ganas.prime las edades de tres chicas.
+
+    function lineFeed() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    //Si olvido declarar la funcion con la palabra function, simplemente no se va a ejecutar.
+
+    function print(statement) {
+        document.write(statement);
+        lineFeed();
+    }
+
+    var yearWorld = 1930;
+    var limit = Number(prompt("Digite el año limite."))
+    var cont = 0;
+
+    while (yearWorld < limit) {
+        
+        print("Hubo mundial en el año " + yearWorld + "." );
+        yearWorld = yearWorld + 4;
+
+        cont ++
+    }
+
+    print("El numero de mundiales hasta el año limite fue de: " + cont)
+
+
+
+</script>

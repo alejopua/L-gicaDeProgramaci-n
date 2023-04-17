@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<h1>Numero de familiares</h1>
+
+<script>
+    // Este codigo pide al usuario un numero y si coincide con el elegido por el PC, ganas.prime las edades de tres chicas.
+
+    function lineFeed() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    //Si olvido declarar la funcion con la palabra function, simplemente no se va a ejecutar.
+
+    function print(statement) {
+        document.write(statement);
+        lineFeed();
+    }
+
+    var cont = 1;
+    var numeroMiembros = Number(prompt("Digite la cantidad de familiares a los cuales se les solicitara la edad."));
+    var total = 0;
+    
+    while (cont <= numeroMiembros) {
+        edad = Number(prompt("Digite la edad de la persona" + cont));
+        total = total + edad;
+        print("Edad de la persona numero " + cont + " es: " + edad + " años.");
+        cont++;
+    }
+
+    print("La edad promedia entre los los integrantes de la familia es de: " + (total/numeroMiembros) + " años.");
+
+    document.write("<hr>");
+    
+
+</script>

@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+<h1>Multiplication Table</h1>
+
+<script>
+    // Este codigo pide al usuario un numero y si coincide con el elegido por el PC, ganas.prime las edades de tres chicas.
+
+    function lineFeed() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    //Si olvido declarar la funcion con la palabra function, simplemente no se va a ejecutar.
+
+    function print(statement) {
+        document.write(statement);
+        lineFeed();
+    }
+
+    //LOOP WHILE
+    var cont = 1;
+    var tabla = Number(prompt("Digite la tabla de multiplicar que desea saber" + "<br>" + "Nota: la tabla se imprimira del 1 al 10"));
+    
+    while (cont <= 10) {
+        print(tabla + " * " + cont + " = " + (tabla * cont));
+        cont++;
+    }
+
+    document.write("<hr>");
+    
+    //LOOP FOR
+    for (let index = 1; index <= 10; index++) {
+        print(tabla + " * " + index + " = " + (tabla * index));
+    }
+
+
+</script>

@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<h1>Números pares</h1>
+<h3>Números pares del 1 al 100<h3></h3>
+
+<script>
+    // Este codigo pide al usuario un numero y si coincide con el elegido por el PC, ganas.prime las edades de tres chicas.
+
+    function lineFeed() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    //Si olvido declarar la funcion con la palabra function, simplemente no se va a ejecutar.
+
+    function print(statement) {
+        document.write(statement);
+        lineFeed();
+    }
+
+    cont = 1;
+
+    while (cont <= 100) {
+
+        if (cont % 2 == 0) {
+            print(cont);
+        }
+        cont++;
+    }
+
+    document.write("<hr>");
+
+
+</script>
